@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdint.h>
 
-char urandom(int32_t seed, int range)
+char urandom(int32_t seed, int32_t range)
 {
 	FILE * urandom = fopen("/dev/urandom", "r");
 	int32_t i = 0;
