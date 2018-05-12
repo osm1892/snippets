@@ -32,7 +32,7 @@ int main(void)
 		printf("바위는 0, 가위는 1, 보는 2 : ");
 		scanf("%d", &your);
 		getchar();
-		if (0 >= your && your >= 2)
+		if (0 >= your || your >= 2)
 			continue;
 		coms = urandom(10000, 3);
 
