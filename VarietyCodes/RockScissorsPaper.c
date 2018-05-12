@@ -16,7 +16,7 @@ char urandom(int32_t seed, int32_t range)
 		result += buffer[i];
 	}
 
-	return (char) (result % range);
+	return (result % range);
 }
 
 int main(void)
