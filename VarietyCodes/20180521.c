@@ -47,6 +47,7 @@ int main()
 					if(realloc(num, (i+50)*sizeof(int)) == NULL)
 					{
 						puts("Ehh... Error Occured! Memory is not enough.. Sorry. This Program will be dead.");
+						free(num);
 						exit(1);
 					}
 				}
@@ -70,6 +71,7 @@ int main()
 					if(realloc(num, (i+50)*sizeof(int)) == NULL)
 					{
 						puts("Ehh... Error Occured! Memory is not enough.. Sorry. This Program will be dead.");
+						free(num);
 						exit(1);
 					}
 				}
@@ -78,6 +80,7 @@ int main()
 		default:
 			main();
 	}
+	free(num);
 }
 
 void SumMatrix(int row, int col)
