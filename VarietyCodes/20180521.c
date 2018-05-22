@@ -6,6 +6,9 @@
 void SumMatrix(int row, int col);
 int WhatIsMax(int * num, int size);
 int SumOfNums(int * num, int size);
+int SumToNum(int num);
+void MatrixAdd(int row, int col);
+void MatrixScalaMul(int row, int col, int n);
 
 int main()
 {
@@ -14,9 +17,13 @@ int main()
 	puts("1. 행렬 합 구하기");
 	puts("2. 최댓값 구하기");
 	puts("3. 수들의 합 구하기");
+	puts("4. 1부터 입력받은 수 까지의 합");
+	puts("5. 벡터합");
+	puts("6. 벡터 스칼라곱");
 	fputs("번호를 입력하세요: ", stdout);
 	scanf("%d", &n);
 	getchar();
+	puts("");
 
 	switch (n)
 	{
@@ -77,6 +84,12 @@ int main()
 				}
 			}
 			break;
+		case 4:
+			fputs("수를 입력하세요: ", stdout);
+			scanf("%d", &n);
+			getchar();
+			printf("1부터 %d까지의 합은 %d 입니다. \n", n, SumToNum(n));
+			break;
 		default:
 			main();
 	}
@@ -85,9 +98,16 @@ int main()
 
 void SumMatrix(int row, int col)
 {
-	int matrix[col+1][row+1];
-	int x = 0, y = 0;
-	memset(matrix, 0, sizeof(matrix));
+	int ** matrix;
+	// int matrix[col+1][row+1]; 이거 C99 표준이라 VS에선 작동 안된답니다.
+	int x = 0, y = 0, i = 0;
+	
+	matrix = calloc(sizeof(int *), col+1);
+	matrix[0] = calloc(sizeof(int), (col+1) * (row+1));
+	for (i = 1; i < col+1; i++)
+	{
+		matrix[i] = matrix[i-1] + (row+1);
+	}
 
 	for (y = 0; y < col; y++)
 	{
@@ -117,6 +137,8 @@ void SumMatrix(int row, int col)
 		}
 		puts("");
 	}
+	free(matrix[0]);
+	free(matrix);
 }
 
 int WhatIsMax(int * num, int size)
@@ -139,4 +161,76 @@ int SumOfNums(int * num, int size)
 		sum += num[i];
 	}
 	return sum;
+}
+
+int SumToNum(int num)
+{
+	int i = 0, result = 0;
+	for (i = 1; i <= num; i++)
+	{
+		result += i;
+	}
+	return result;
+}
+
+void MatrixAdd(int row, int col)
+{
+	int x = 0, y = 0;
+	int matrix1[row][col];
+	int matrix2 = 0;
+	
+	for (y = 0; y < row; y++)
+	{
+		printf("첫번째 행렬의 %d 번째 행을 입력해주세요: ", y);
+		for (x = 0; x < col; x++)
+		{
+			scanf("%d", matrix1[y] + x);
+		}
+	}
+	for (y = 0; y < row; y++)
+	{
+		printf("두번째 행렬의 %d 번째 행을 입력해주세요: ", y);
+		for (x = 0; x < col; x++)
+		{
+			scanf("%d", &matrix2);
+			matrix1[y][x] += matrix2;
+		}
+	}
+	
+	puts("");
+	
+	for (y = 0; y < row; y++)
+	{
+		for (x = 0; x < col; x++)
+		{
+			printf("%d\t", matrix1[y][x]);
+		}
+		puts("");
+	}
+}
+
+void MatrixScalaMul(int row, int col, int n)
+{
+	int x = 0, y = 0;
+	int matrix[row][col];
+	memset(matrix, 0, row * col);
+	
+	for (y = 0; y < row; y++)
+	{
+		printf("행렬의 %d 번째 행을 입력해주세요: ", y);
+		for (x = 0; x < col; x++)
+		{
+			scanf("%d", matrix[y]+x);
+		}
+	}
+	
+	puts("");
+	for (y = 0; y < row; y++)
+	{
+		for (x = 0; x < col; x++)
+		{
+			printf("%d\t", matrix[y][x] * n);
+		}
+		puts("");
+	}
 }
