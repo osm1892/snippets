@@ -175,9 +175,14 @@ int SumToNum(int num)
 
 void MatrixAdd(int row, int col)
 {
-	int x = 0, y = 0;
-	int matrix1[row][col];
+	int x = 0, y = 0, i = 0;
 	int matrix2 = 0;
+	int ** matrix1 = (int **) calloc(row, sizeof(int *));
+	*matrix1 = (int *) calloc(row * col, sizeof(int));
+	for (i = 1; i < row; i++)
+	{
+		matrix[i + 1] = matrix[i] + col;
+	}
 	
 	for (y = 0; y < row; y++)
 	{
@@ -207,13 +212,15 @@ void MatrixAdd(int row, int col)
 		}
 		puts("");
 	}
+	free(*matrix1);
+	free(matrix1);
 }
 
 void MatrixScalaMul(int row, int col, int n)
 {
-	int x = 0, y = 0;
-	int matrix[row][col];
-	memset(matrix, 0, row * col);
+	int x = 0, y = 0, i = 0;
+	int ** matrix = (int **) calloc(row, sizeof(int *));
+	*matrix = (int *) calloc(row * col, sizeof(int));
 	
 	for (y = 0; y < row; y++)
 	{
@@ -233,4 +240,6 @@ void MatrixScalaMul(int row, int col, int n)
 		}
 		puts("");
 	}
+	free(*matrix);
+	free(matrix);
 }
