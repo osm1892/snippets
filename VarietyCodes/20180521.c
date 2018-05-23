@@ -90,6 +90,28 @@ int main()
 			getchar();
 			printf("1부터 %d까지의 합은 %d 입니다. \n", n, SumToNum(n));
 			break;
+		case 5:
+			fputs("행 수를 입력하세요: ", stdout);
+			scanf("%d", &row);
+			getchar();
+			fputs("열 수를 입력하세요: ", stdout);
+			scanf("%d", &col);
+			getchar();
+			MatrixAdd(row, col);
+			break;
+		case 6:
+			fputs("행 수를 입력하세요: ", stdout);
+			scanf("%d", &row);
+			getchar();
+			fputs("열 수를 입력하세요: ", stdout);
+			getchar();
+			scanf("%d", &col);
+			getchar();
+			fputs("곱할 수를 입력하세요: ", stdout);
+			scanf("%d", &n);
+			getchar();
+			MatrixScalaMul(row, col, n);
+			break;
 		default:
 			main();
 	}
@@ -181,7 +203,7 @@ void MatrixAdd(int row, int col)
 	*matrix1 = (int *) calloc(row * col, sizeof(int));
 	for (i = 1; i < row; i++)
 	{
-		matrix[i + 1] = matrix[i] + col;
+		matrix1[i] = matrix1[i - 1] + col;
 	}
 	
 	for (y = 0; y < row; y++)
@@ -221,6 +243,10 @@ void MatrixScalaMul(int row, int col, int n)
 	int x = 0, y = 0, i = 0;
 	int ** matrix = (int **) calloc(row, sizeof(int *));
 	*matrix = (int *) calloc(row * col, sizeof(int));
+	for (i = 1; i < row; i++)
+	{
+		matrix[i] = matrix[i - 1] + col;
+	}
 	
 	for (y = 0; y < row; y++)
 	{
