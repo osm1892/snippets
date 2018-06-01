@@ -6,7 +6,7 @@
 
 int main(void)
 {
-	int num = 4;
+	int num = 4, cont = 0;
 	char data[num+1];
 	char rnum[num+1];
 	int x = 0, i = 0, j = 0, strike = 0, ball = 0;
@@ -35,13 +35,20 @@ int main(void)
 		{
 			for (j = num - 1; j != i; j--)
 			{
-				if (data[i] == data[j])
+				if (data[i] == data[j])	//중복된 숫자가 입력 될 경우, 다시 입력을 받도록 합니다.
 				{
 					write(1, "중복된 숫자입니다.\n", 30);
 					x--;
-					continue;	//중복된 숫자 입력을 받을 시, 다시 받습니다.
+					i = num;
+					cont = 1;
+					break;
 				}
 			}
+		}
+		if (cont == 1)
+		{
+			cont = 0;
+			continue;
 		}
 		
 		for (i = 0; i != strlen(data); i++)	//받은 숫자를 판단하는 로직입니다.
