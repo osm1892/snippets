@@ -8,15 +8,18 @@ int SaveTictactoe(char board[3][3], int x, int y, int isO)
 		return 1;
 	}
 
-	if (isO)
+	if (isO && board[x][y] == 0)
 	{
 		board[y][x] = 'O';
+		return 0;
 	}
-	else
+	if (!isO && board[x][y] == 0)
 	{
 		board[y][x] = 'X';
+		return 0;
 	}
-	return 0;
+	puts("이미 존재하는 자리입니다.");
+	return 1;
 }
 
 void PrintTictactoe(char board[3][3])
