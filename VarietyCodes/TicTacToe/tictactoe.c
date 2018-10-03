@@ -1,10 +1,10 @@
-#include "head.h"
+ï»¿#include "head.h"
 
 int SaveTictactoe(char board[3][3], int x, int y, int isO)
 {
 	if (x < 0 || 2 < x || y < 0 || 2 < y)
 	{
-		puts("Àß¸øµÈ ¼ýÀÚÀÔ´Ï´Ù.");
+		puts("ìž˜ëª»ëœ ìˆ«ìžìž…ë‹ˆë‹¤.");
 		return 1;
 	}
 
@@ -18,7 +18,7 @@ int SaveTictactoe(char board[3][3], int x, int y, int isO)
 		board[y][x] = 'X';
 		return 0;
 	}
-	puts("ÀÌ¹Ì Á¸ÀçÇÏ´Â ÀÚ¸®ÀÔ´Ï´Ù.");
+	puts("ì´ë¯¸ ì¡´ìž¬í•˜ëŠ” ìžë¦¬ìž…ë‹ˆë‹¤.");
 	return 1;
 }
 
@@ -38,7 +38,7 @@ int BoardCheck(char board[3][3])
 {
 	int i = 0, j = 0, oCount = 0, xCount = 0;
 
-	for (i = 0; i < 3; i++) // °¡·Î ºù°í Ã¼Å©
+	for (i = 0; i < 3; i++) // ê°€ë¡œ ë¹™ê³  ì²´í¬
 	{
 		oCount = 0;
 		xCount = 0;
@@ -62,7 +62,7 @@ int BoardCheck(char board[3][3])
 		}
 	}
 
-	for (i = 0; i < 3; i++) // ¼¼·Î ºù°í Ã¼Å©
+	for (i = 0; i < 3; i++) // ì„¸ë¡œ ë¹™ê³  ì²´í¬
 	{
 		oCount = 0;
 		xCount = 0;
@@ -87,7 +87,7 @@ int BoardCheck(char board[3][3])
 
 	oCount = 0;
 	xCount = 0;
-	for (i = 0; i < 3; i++) // ¿ª½½·¡½Ã ¹æÇâ »ç¼± Ã¼Å©
+	for (i = 0; i < 3; i++) // ì—­ìŠ¬ëž˜ì‹œ ë°©í–¥ ì‚¬ì„  ì²´í¬
 	{
 		switch (board[i][i])
 		{

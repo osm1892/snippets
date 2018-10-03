@@ -1,4 +1,4 @@
-#include "head.h"
+ï»¿#include "head.h"
 
 int main(void)
 {
@@ -11,7 +11,7 @@ int main(void)
 		PrintTictactoe(board);
 		do
 		{
-			printf("O¸¦ ³õÀ» Â÷·ÊÀÔ´Ï´Ù. À§Ä¡¸¦ ÀÔ·ÂÇÏ¿© ÁÖ½Ê½Ã¿À. (x y) : ");
+			printf("Oë¥¼ ë†“ì„ ì°¨ë¡€ì…ë‹ˆë‹¤. ìœ„ì¹˜ë¥¼ ì…ë ¥í•˜ì—¬ ì£¼ì‹­ì‹œì˜¤. (x y) : ");
 			scanf("%d %d", &x, &y);
 			getchar();
 		} while (SaveTictactoe(board, x, y, 1));
@@ -24,7 +24,7 @@ int main(void)
 		PrintTictactoe(board);
 		do
 		{
-			printf("X¸¦ ³õÀ» Â÷·ÊÀÔ´Ï´Ù. À§Ä¡¸¦ ÀÔ·ÂÇÏ¿© ÁÖ½Ê½Ã¿À. (x y) : ");
+			printf("Xë¥¼ ë†“ì„ ì°¨ë¡€ì…ë‹ˆë‹¤. ìœ„ì¹˜ë¥¼ ì…ë ¥í•˜ì—¬ ì£¼ì‹­ì‹œì˜¤. (x y) : ");
 			scanf("%d %d", &x, &y);
 			getchar();
 		} while (SaveTictactoe(board, x, y, 0));
@@ -32,13 +32,13 @@ int main(void)
 	switch (BoardCheck(board))
 	{
 	case 1:
-		puts("O °¡ ½Â¸®ÇÏ¿´½À´Ï´Ù!");
+		puts("O ê°€ ìŠ¹ë¦¬í•˜ì˜€ìŠµë‹ˆë‹¤!");
 		break;
 	case 2:
-		puts("X °¡ ½Â¸®ÇÏ¿´½À´Ï´Ù!");
+		puts("X ê°€ ìŠ¹ë¦¬í•˜ì˜€ìŠµë‹ˆë‹¤!");
 		break;
 	default:
-		puts("ºñ°å½À´Ï´Ù.");
+		puts("ë¹„ê²¼ìŠµë‹ˆë‹¤.");
 		break;
 	}
 
