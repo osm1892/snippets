@@ -6,19 +6,19 @@
 
 // 16비트 정수 배열과 사이즈를 받아 각각의 index에 0~32767의 난수를 삽입합니다.
 void ArrayRandomizer(int16_t arr[], int size);
-//16비트 정수 배열의 최소값과 최대값을 max<<16 + min의 32비트 정수 형태로 출력합니다.
+// 16비트 정수인 최대값과 최소값을 max<<16 + min의 32비트 정수 형태로 반환합니다. 비트마스크 방식
 int32_t ArrayMinMaxFinder(int16_t arr[], int size);
-
 
 int main(void)
 {
 	int16_t arr[SIZE] = { 0 };
 	int32_t minMax = 0;
+	int16_t minMaxArr[2] = { 0 };
 
 	ArrayRandomizer(arr, SIZE);
 	minMax = ArrayMinMaxFinder(arr, SIZE);
 
-	printf("배열의 최소값은 %d이고, 최대값은 %d 입니다.\n", minMax & 65535, minMax >> 16);
+	printf("배열의 최소값은 %hd 이고, 최대값은 %hd 입니다.\n", minMax & 65535, minMax >> 16);
 	return 0;
 }
 
