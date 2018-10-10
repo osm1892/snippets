@@ -1,0 +1,15 @@
+C:\Users\osm18\source\repos\VBReport1\VBReport1-4\bin\Debug\VBReport1-4.exe.config
+C:\Users\osm18\source\repos\VBReport1\VBReport1-4\bin\Debug\VBReport1-4.exe
+C:\Users\osm18\source\repos\VBReport1\VBReport1-4\bin\Debug\VBReport1-4.pdb
+C:\Users\osm18\source\repos\VBReport1\VBReport1-4\bin\Debug\VBReport1-4.xml
+C:\Users\osm18\source\repos\VBReport1\VBReport1-4\obj\Debug\VBReport1-4.vbprojAssemblyReference.cache
+C:\Users\osm18\source\repos\VBReport1\VBReport1-4\obj\Debug\VBReport1_4.frmForm.resources
+C:\Users\osm18\source\repos\VBReport1\VBReport1-4\obj\Debug\VBReport1_4.Resources.resources
+C:\Users\osm18\source\repos\VBReport1\VBReport1-4\obj\Debug\VBReport1-4.vbproj.GenerateResource.cache
+C:\Users\osm18\source\repos\VBReport1\VBReport1-4\obj\Debug\VBReport1-4.vbproj.CoreCompileInputs.cache
+C:\Users\osm18\source\repos\VBReport1\VBReport1-4\obj\Debug\VBReport1-4.exe
+C:\Users\osm18\source\repos\VBReport1\VBReport1-4\obj\Debug\VBReport1-4.xml
+C:\Users\osm18\source\repos\VBReport1\VBReport1-4\obj\Debug\VBReport1-4.pdb
+C:\Users\osm18\source\repos\VBReport1\VBReport1-4\bin\Debug\ko\VBReport1-4.resources.dll
+C:\Users\osm18\source\repos\VBReport1\VBReport1-4\obj\Debug\VBReport1_4.frmForm.ko.resources
+C:\Users\osm18\source\repos\VBReport1\VBReport1-4\obj\Debug\ko\VBReport1-4.resources.dll

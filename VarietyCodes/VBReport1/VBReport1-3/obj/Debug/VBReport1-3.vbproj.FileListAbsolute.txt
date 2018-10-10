@@ -1,0 +1,12 @@
+C:\Users\osm18\source\repos\VBReport1\VBReport1-3\bin\Debug\VBReport1-3.exe.config
+C:\Users\osm18\source\repos\VBReport1\VBReport1-3\bin\Debug\VBReport1-3.exe
+C:\Users\osm18\source\repos\VBReport1\VBReport1-3\bin\Debug\VBReport1-3.pdb
+C:\Users\osm18\source\repos\VBReport1\VBReport1-3\bin\Debug\VBReport1-3.xml
+C:\Users\osm18\source\repos\VBReport1\VBReport1-3\obj\Debug\VBReport1-3.vbprojAssemblyReference.cache
+C:\Users\osm18\source\repos\VBReport1\VBReport1-3\obj\Debug\VBReport1_3.frmForm.resources
+C:\Users\osm18\source\repos\VBReport1\VBReport1-3\obj\Debug\VBReport1_3.Resources.resources
+C:\Users\osm18\source\repos\VBReport1\VBReport1-3\obj\Debug\VBReport1-3.vbproj.GenerateResource.cache
+C:\Users\osm18\source\repos\VBReport1\VBReport1-3\obj\Debug\VBReport1-3.vbproj.CoreCompileInputs.cache
+C:\Users\osm18\source\repos\VBReport1\VBReport1-3\obj\Debug\VBReport1-3.exe
+C:\Users\osm18\source\repos\VBReport1\VBReport1-3\obj\Debug\VBReport1-3.xml
+C:\Users\osm18\source\repos\VBReport1\VBReport1-3\obj\Debug\VBReport1-3.pdb
