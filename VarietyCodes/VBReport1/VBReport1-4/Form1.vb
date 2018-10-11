@@ -1,31 +1,34 @@
 ﻿Public Class frmForm
-    Dim num1 As Double = 0
-    Dim num2 As Double = 0
-    Dim oprNum As Integer = 0
+    Dim num1 As Double = 0 '누적 연산에서 Left 부분을 담당합니다.
+    Dim num2 As Double = 0 '누적 연산에서 Right 부분을 담당합니다.
+    Dim result As Double = 0 '연산 결과를 저장하는 부분입니다.
+    Dim oprNum As Integer = 0 '계산 실행시, 연산자를 결정하는 변수입니다.
 
+    '커서가 위치한 부분에 숫자를 입력하기 위한 함수입니다.
     Private Sub TxtInsert(character As String)
         Dim location As Integer = txtCalc.SelectionStart
         txtCalc.Text = txtCalc.Text.Insert(location, character)
         txtCalc.SelectionStart = location
     End Sub
 
+    '실제 연산을 실행하는 함수입니다.
     Private Sub Calculation()
         Try
             Select Case oprNum
                 Case 1
-                    num1 += num2
+                    result = num1 + num2
                 Case 2
-                    num1 -= num2
+                    result = num1 - num2
                 Case 3
-                    num1 *= num2
+                    result = num1 * num2
                 Case 4
-                    num1 /= num2
+                    result = num1 / num2
                 Case 5
-                    num1 = Math.Pow(num1, 2)
+                    num1 = Math.Pow(result, 2)
                 Case 6
-                    num1 = Math.Pow(num1, 3)
+                    num1 = Math.Pow(result, 3)
                 Case 7
-                    num1 = Math.Sqrt(num1)
+                    num1 = Math.Sqrt(result)
                 Case Else
                     Return
             End Select
@@ -34,12 +37,16 @@
         End Try
     End Sub
 
+    'AC버튼을 눌렀을 시, 초기화를 하는 함수입니다.
     Private Sub BtnAC_Click(sender As Object, e As EventArgs) Handles btnAC.Click
         txtCalc.Text = ""
         num1 = 0
         num2 = 0
+        oprNum = 0
+        result = 0
     End Sub
 
+    '눌린 키가 숫자, 점, 백스페이스가 아닌 경우, 연산자인지를 판단하고, 그에 따른 함수를 호출합니다.
     Private Sub TxtCalc_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtCalc.KeyPress
         If (e.KeyChar < "0" Or "9" < e.KeyChar Or e.KeyChar = ".") And e.KeyChar <> Chr(8) Then
             If e.KeyChar = "+" Then
@@ -51,8 +58,9 @@
                     Return
                 End If
                 Double.TryParse(txtCalc.Text, num2)
-                oprNum = 1
                 Calculation()
+                num1 = result
+                oprNum = 1
                 txtCalc.Text = ""
             ElseIf e.KeyChar = "-" Then
                 e.KeyChar = ""
@@ -63,8 +71,9 @@
                     Return
                 End If
                 Double.TryParse(txtCalc.Text, num2)
-                oprNum = 2
                 Calculation()
+                num1 = result
+                oprNum = 2
                 txtCalc.Text = ""
             ElseIf e.KeyChar = "*" Then
                 e.KeyChar = ""
@@ -75,8 +84,9 @@
                     Return
                 End If
                 Double.TryParse(txtCalc.Text, num2)
-                oprNum = 3
                 Calculation()
+                num1 = result
+                oprNum = 3
                 txtCalc.Text = ""
             ElseIf e.KeyChar = "/" Then
                 e.KeyChar = ""
@@ -87,19 +97,23 @@
                     Return
                 End If
                 Double.TryParse(txtCalc.Text, num2)
-                oprNum = 4
                 Calculation()
+                num1 = result
+                oprNum = 4
                 txtCalc.Text = ""
             ElseIf e.KeyChar = "=" Then
                 e.KeyChar = ""
+                Double.TryParse(txtCalc.Text, num2)
                 Calculation()
-                txtCalc.Text = num1
+                txtCalc.Text = result
+                num1 = result
             ElseIf e.KeyChar = Chr(27) Then
                 e.KeyChar = ""
                 txtCalc.Text = ""
                 num1 = 0
                 num2 = 0
                 oprNum = 0
+                result = 0
             End If
         End If
     End Sub
@@ -162,8 +176,9 @@
             Return
         End If
         Double.TryParse(txtCalc.Text, num2)
-        oprNum = 1
         Calculation()
+        num1 = result
+        oprNum = 1
         txtCalc.Text = ""
     End Sub
 
@@ -175,8 +190,9 @@
             Return
         End If
         Double.TryParse(txtCalc.Text, num2)
-        oprNum = 2
         Calculation()
+        num1 = result
+        oprNum = 2
         txtCalc.Text = ""
     End Sub
 
@@ -188,8 +204,9 @@
             Return
         End If
         Double.TryParse(txtCalc.Text, num2)
-        oprNum = 3
         Calculation()
+        num1 = result
+        oprNum = 3
         txtCalc.Text = ""
     End Sub
 
@@ -201,15 +218,17 @@
             Return
         End If
         Double.TryParse(txtCalc.Text, num2)
-        oprNum = 4
         Calculation()
+        num1 = result
+        oprNum = 4
         txtCalc.Text = ""
     End Sub
 
     Private Sub btnSquare_Click(sender As Object, e As EventArgs) Handles btnSquare.Click
         Double.TryParse(txtCalc.Text, num1)
-        oprNum = 5
         Calculation()
+        num1 = result
+        oprNum = 5
         txtCalc.Text = num1
     End Sub
 
@@ -219,15 +238,17 @@
 
     Private Sub btnCube_Click(sender As Object, e As EventArgs) Handles btnCube.Click
         Double.TryParse(txtCalc.Text, num1)
-        oprNum = 6
         Calculation()
-        txtCalc.Text = num1
+        oprNum = 6
+        txtCalc.Text = result
+        num1 = result
     End Sub
 
     Private Sub btnSqrt_Click(sender As Object, e As EventArgs) Handles btnSqrt.Click
         Double.TryParse(txtCalc.Text, num1)
-        oprNum = 7
         Calculation()
-        txtCalc.Text = num1
+        oprNum = 7
+        txtCalc.Text = result
+        num1 = result
     End Sub
 End Class

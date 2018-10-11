@@ -121,8 +121,8 @@
   <data name="btnTwo.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="btnDot.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="&gt;&gt;btnSeven.ZOrder" xml:space="preserve">
+    <value>14</value>
   </data>
   <data name="&gt;&gt;btnPlus.Parent" xml:space="preserve">
     <value>$this</value>
@@ -145,6 +145,9 @@
   </data>
   <data name="&gt;&gt;txtCalc.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSix.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="btnEqual.Text" xml:space="preserve">
     <value>=</value>
@@ -200,17 +203,11 @@
   <data name="btnDivide.Text" xml:space="preserve">
     <value>/</value>
   </data>
-  <data name="btnAC.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
   <data name="&gt;&gt;btnSix.Name" xml:space="preserve">
     <value>btnSix</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>계산기</value>
-  </data>
-  <data name="btnFour.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
   </data>
   <data name="&gt;&gt;btnSeven.Parent" xml:space="preserve">
     <value>$this</value>
@@ -287,14 +284,11 @@
   <data name="&gt;&gt;btnEight.Name" xml:space="preserve">
     <value>btnEight</value>
   </data>
-  <data name="&gt;&gt;btnSix.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;btnMinus.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="btnEqual.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
-  </data>
-  <data name="&gt;&gt;txtCalc.Name" xml:space="preserve">
-    <value>txtCalc</value>
   </data>
   <data name="&gt;&gt;btnAC.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -320,9 +314,6 @@
   <data name="&gt;&gt;btnSix.ZOrder" xml:space="preserve">
     <value>15</value>
   </data>
-  <data name="btnFive.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
   <data name="btnPlus.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
@@ -335,8 +326,17 @@
   <data name="btnZero.Location" type="System.Drawing.Point, System.Drawing">
     <value>143, 294</value>
   </data>
+  <data name="btnFour.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 178</value>
+  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmForm</value>
+  </data>
+  <data name="btnSqrt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>442, 365</value>
   </data>
   <data name="btnFive.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -361,9 +361,6 @@
   </data>
   <data name="btnDot.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
-  </data>
-  <data name="btnMinus.Location" type="System.Drawing.Point, System.Drawing">
-    <value>305, 149</value>
   </data>
   <data name="btnEqual.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -407,6 +404,9 @@
   <data name="btnCube.Location" type="System.Drawing.Point, System.Drawing">
     <value>305, 265</value>
   </data>
+  <data name="&gt;&gt;btnNine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;btnSqrt.Name" xml:space="preserve">
     <value>btnSqrt</value>
   </data>
@@ -443,14 +443,11 @@
   <data name="&gt;&gt;btnOne.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="btnMinus.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
   <data name="&gt;&gt;btnSeven.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnMinus.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;btnNine.Name" xml:space="preserve">
+    <value>btnNine</value>
   </data>
   <data name="&gt;&gt;btnDivide.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -460,6 +457,9 @@
   </data>
   <data name="btnDivide.Location" type="System.Drawing.Point, System.Drawing">
     <value>305, 207</value>
+  </data>
+  <data name="&gt;&gt;btnSeven.Name" xml:space="preserve">
+    <value>btnSeven</value>
   </data>
   <data name="&gt;&gt;btnMultiply.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -503,9 +503,6 @@
   <data name="&gt;&gt;btnTwo.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btnSeven.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
   <data name="&gt;&gt;btnDivide.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -527,20 +524,20 @@
   <data name="btnEqual.Location" type="System.Drawing.Point, System.Drawing">
     <value>224, 294</value>
   </data>
-  <data name="&gt;&gt;btnFour.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
   <data name="btnEight.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
-  <data name="&gt;&gt;btnNine.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btnFive.Text" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="&gt;&gt;btnFour.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="btnFive.Text" xml:space="preserve">
-    <value>5</value>
+  <data name="btnMinus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>305, 149</value>
+  </data>
+  <data name="btnDot.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
   <data name="btnSix.Text" xml:space="preserve">
     <value>6</value>
@@ -557,14 +554,14 @@
   <data name="btnSqrt.Text" xml:space="preserve">
     <value>sqrt</value>
   </data>
-  <data name="btnSqrt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+  <data name="btnMinus.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
   </data>
   <data name="&gt;&gt;btnCube.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>442, 365</value>
+  <data name="&gt;&gt;btnFour.ZOrder" xml:space="preserve">
+    <value>17</value>
   </data>
   <data name="&gt;&gt;btnDivide.Name" xml:space="preserve">
     <value>btnDivide</value>
@@ -599,11 +596,14 @@
   <data name="btnTwo.Text" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="btnFour.Location" type="System.Drawing.Point, System.Drawing">
-    <value>62, 178</value>
+  <data name="&gt;&gt;btnTwo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnNine.Name" xml:space="preserve">
-    <value>btnNine</value>
+  <data name="btnFour.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnAC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
   </data>
   <data name="btnOne.Location" type="System.Drawing.Point, System.Drawing">
     <value>62, 120</value>
@@ -614,8 +614,8 @@
   <data name="&gt;&gt;btnCube.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btnSeven.Name" xml:space="preserve">
-    <value>btnSeven</value>
+  <data name="btnFive.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
   </data>
   <data name="btnFour.Text" xml:space="preserve">
     <value>4</value>
@@ -632,8 +632,8 @@
   <data name="btnMultiply.Location" type="System.Drawing.Point, System.Drawing">
     <value>305, 178</value>
   </data>
-  <data name="&gt;&gt;btnTwo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;txtCalc.Name" xml:space="preserve">
+    <value>txtCalc</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
