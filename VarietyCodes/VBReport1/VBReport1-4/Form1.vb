@@ -31,7 +31,7 @@
 
     '눌린 키가 숫자, 점, 백스페이스가 아닌 경우, 연산자인지를 판단하고, 그에 따른 함수를 호출합니다.
     Private Sub TxtCalc_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtCalc.KeyPress
-        If (e.KeyChar < "0" Or "9" < e.KeyChar Or e.KeyChar = ".") And e.KeyChar <> Chr(8) Then
+        If (e.KeyChar < "0" Or "9" < e.KeyChar) And e.KeyChar <> Chr(8) And e.keychar <> "." Then
             Select Case e.KeyChar
                 Case "+"
                     e.KeyChar = ""
