@@ -1,0 +1,12 @@
+C:\Users\osm18\source\repos\osm1892\VarietyCodes\VarietyCodes\VBReport2\VBReport2-1\bin\Debug\VBReport2-1.exe.config
+C:\Users\osm18\source\repos\osm1892\VarietyCodes\VarietyCodes\VBReport2\VBReport2-1\bin\Debug\VBReport2-1.exe
+C:\Users\osm18\source\repos\osm1892\VarietyCodes\VarietyCodes\VBReport2\VBReport2-1\bin\Debug\VBReport2-1.pdb
+C:\Users\osm18\source\repos\osm1892\VarietyCodes\VarietyCodes\VBReport2\VBReport2-1\bin\Debug\VBReport2-1.xml
+C:\Users\osm18\source\repos\osm1892\VarietyCodes\VarietyCodes\VBReport2\VBReport2-1\obj\Debug\VBReport2-1.vbprojAssemblyReference.cache
+C:\Users\osm18\source\repos\osm1892\VarietyCodes\VarietyCodes\VBReport2\VBReport2-1\obj\Debug\VBReport2_1.Form1.resources
+C:\Users\osm18\source\repos\osm1892\VarietyCodes\VarietyCodes\VBReport2\VBReport2-1\obj\Debug\VBReport2_1.Resources.resources
+C:\Users\osm18\source\repos\osm1892\VarietyCodes\VarietyCodes\VBReport2\VBReport2-1\obj\Debug\VBReport2-1.vbproj.GenerateResource.cache
+C:\Users\osm18\source\repos\osm1892\VarietyCodes\VarietyCodes\VBReport2\VBReport2-1\obj\Debug\VBReport2-1.vbproj.CoreCompileInputs.cache
+C:\Users\osm18\source\repos\osm1892\VarietyCodes\VarietyCodes\VBReport2\VBReport2-1\obj\Debug\VBReport2-1.exe
+C:\Users\osm18\source\repos\osm1892\VarietyCodes\VarietyCodes\VBReport2\VBReport2-1\obj\Debug\VBReport2-1.xml
+C:\Users\osm18\source\repos\osm1892\VarietyCodes\VarietyCodes\VBReport2\VBReport2-1\obj\Debug\VBReport2-1.pdb

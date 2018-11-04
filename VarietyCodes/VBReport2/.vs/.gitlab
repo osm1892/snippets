@@ -1,0 +1,13 @@
+{
+  "User": {
+    "Id": 2327164,
+    "Username": "osm1892",
+    "Name": "osm1892",
+    "Email": "osm189214@gmail.com",
+    "AvatarUrl": "https://secure.gravatar.com/avatar/1414862e703d7b8d31937fb73904e9a3?s=80&d=identicon",
+    "PrivateToken": "902e4ff8d425bf7a3f1e1be06e0066250847c0283df314967e2d8c0db055648a",
+    "Host": "https://gitlab.com",
+    "TwoFactorEnabled": false,
+    "ApiVersion": 3
+  }
+}
