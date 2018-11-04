@@ -16,7 +16,7 @@
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LbxStatics.Items.Add("후보" + vbTab + vbTab + "득표수")
-        LbxStatics.Items.Add("전체" + vbTab + vbTab + "0" + vbTab + vbTab + "100")
+        LbxStatics.Items.Add("전체" + vbTab + vbTab + "0")
     End Sub
 
     Private Sub BtnSelect_Click(sender As Object, e As EventArgs) Handles BtnSelect.Click
