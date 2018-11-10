@@ -2,12 +2,17 @@
     Dim Random As String = ""
     Dim check(9) As Boolean
 
+    Public Function GetRandom(ByVal Min As Integer, ByVal Max As Integer) As Integer
+        Dim Generator As System.Random = New System.Random()
+        Return Generator.Next(Min, Max)
+    End Function
+
     Private Sub Randomizer()
         Dim source As String = "0123456789"
         Dim n As Integer = 0
 
         For i = 0 To 3 Step 1
-            n = Math.Round(Rnd()) Mod (10 - i)
+            n = GetRandom(0, 9 - i)
             Random += source.Chars(n)
             source = source.Remove(n, 1)
         Next i
@@ -86,13 +91,15 @@
         Next
 
         TxtNumber.Clear()
+        TxtNumber.Select()
     End Sub
 
     Private Sub BtnHelp_Click(sender As Object, e As EventArgs) Handles BtnHelp.Click
-        MsgBox("먼저 네 자리의 숫자가 주어지고, 이 숫자를 10번 안에 맞추면 이기는 게임입니다." + vbCrLf + "입력한 숫자가 주어진 숫자와 일치하지만 자리가 다르면 b(ball), 자리와 숫자가 모두 같으면 s(strike) 입니다. 즉 4 strike를 받으면 이긴다고 할 수 있습니다." + vbCrLf + "중복이거나 4자리가 아닌 숫자는 입력하실 수 없습니다", 0, "도움말")
+        MsgBox("먼저 네 자리의 숫자가 주어지고, 이 숫자를 10번 안에 맞추면 이기는 게임입니다." + vbCrLf + "입력한 숫자가 주어진 숫자와 일치하지만 자리가 다르면 b(ball), 자리와 숫자가모두 같으면 s(strike) 입니다. 즉 4 strike를 받으면 이긴다고 할 수 있습니다.", 0, "도움말")
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Randomizer()
+        TxtNumber.Select()
     End Sub
 End Class
